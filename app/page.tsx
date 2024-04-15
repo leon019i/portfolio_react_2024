@@ -30,10 +30,10 @@ export default function Home() {
 
     return (
         <WaterWaveWrapper
-            imageUrl="/path/to/image.jpg"  // Ensure you provide a valid URL
-            dropRadius={20}
-            perturbance={0.04}
-            resolution={256}
+            imageUrl=""
+            dropRadius="3"
+            perturbance="3"
+            resolution="2048"
         >
             {() => (
                 <div className="pb-8">
