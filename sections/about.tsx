@@ -15,7 +15,7 @@ const AboutSection = () => {
         <div className="pt-24 px-3 lg:px-8">
             <Heading number="02" title_1="About" title_2="Me"/>
             <div className="space-y-4 py-8">
-                <div className="space-y-4 grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
+                <div className="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-4 md:space-y-0 lg:grid-cols-2 xl:gap-4 xl:space-y-0 2xl:grid-cols-3">
                     {/*My card*/}
                     <div className="space-y-4">
                         <MeCard/>

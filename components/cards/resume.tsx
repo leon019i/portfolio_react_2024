@@ -34,8 +34,8 @@ const ResumeCard = () => {
                 className="flex items-center justify-between absolute bottom-6 left-6 w-[calc(100%-3rem)] md:static md:w-full">
                 {/*Socials*/}
                 <Socials/>
-                <Button className="text-xl xl:text-2xl font-medium text-primary-foreground mt-8 right-0 focus:outline-none focus:shadow-outline">
-                    <FaDownload/>
+                <Button>
+                    <FaDownload />
                     Resume
                 </Button>
             </div>
