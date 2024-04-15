@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import useSound from 'use-sound';
 import { useEffect } from "react";
 import Button from "@/components/ui/button";  // Ensure this is the correct import path
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import LandingSection from "@/sections/landing";
 import FeaturedSection from "@/sections/featured";
