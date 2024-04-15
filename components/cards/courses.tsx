@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from "@/components/ui/card";
 import {Timeline, TimelineItem} from "@/components/ui/timeline";
-import certificationsData from "@/data/certifications";
+import {coursesData} from "@/data/courses"
 
 
-const CertificationCard = () => {
+const CoursesCard = () => {
     return (
-        <Card title="My Certifications">
+        <Card title="Online Courses">
             <Timeline>
-                {certificationsData.map((ex, i) => (
+                {coursesData.map((ex, i) => (
                     <TimelineItem key={i} date={ex.date} title={ex.title} subTitle={ex.subTitle}/>))
                 }
             </Timeline>
@@ -16,6 +16,6 @@ const CertificationCard = () => {
     );
 };
 
-export default CertificationCard;
+export default CoursesCard;
 
 

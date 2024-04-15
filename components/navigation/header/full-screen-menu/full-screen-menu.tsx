@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { menuSlide } from "./animation";
-import Curve from "./curve";
+import { menuSlide } from "@/components/navigation/header/full-screen-menu/animation";
+import Curve from "@/components/navigation/header/full-screen-menu/curve";
 import Profile from "@/components/ui/profile";
-import NavLink from "./nav-link";
+import NavLink from "@/components/navigation/header/full-screen-menu/nav-link";
 import Link from "next/link";
-import MenuCard from "./menu-card";
+import MenuCard from "@/components/navigation/header/full-screen-menu/menu-card";
 
 export default function FullScreenMenu() {
   return (
@@ -47,11 +47,8 @@ export default function FullScreenMenu() {
           </div>
           {/*----Middle--------------*/}
           <div className="flex items-center gap-4">
-            <Link href="/">LINKEDIN</Link>
-            <Link href="/">UDEMY</Link>
-            <Link href="/">YOUTUBE</Link>
-            <Link href="/">INSTAGRAM</Link>
-            <Link href="/">TWITTER</Link>
+            <Link href="https://www.linkedin.com/in/loay-fayez/">LINKEDIN</Link>
+
           </div>
           {/*----rIGHT--------------*/}
           <div className="flex items-center gap-4">
