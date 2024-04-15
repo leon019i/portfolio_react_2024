@@ -34,10 +34,10 @@ const ResumeCard = () => {
                 className="flex items-center justify-between absolute bottom-6 left-6 w-[calc(100%-3rem)] md:static md:w-full">
                 {/*Socials*/}
                 <Socials/>
-                <Button>
+                <a href={"https://drive.google.com/file/d/1osOsBXKVJQgZwVoPvQ7G-fwW0MXkrL-W/view?usp=sharing"} target={"_blank"}><Button>
                     <FaDownload />
                     Resume
-                </Button>
+                </Button></a>
             </div>
         </Card>
     );
