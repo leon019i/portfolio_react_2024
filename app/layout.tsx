@@ -7,6 +7,7 @@ import GrainEffect from "@/components/visualEffects/grain-effect";
 import Cursor from "@/components/cursor/cursor";
 import {ReactNode} from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 //Fonts
 const MainFont = Bricolage_Grotesque({ subsets: ["latin"] });
