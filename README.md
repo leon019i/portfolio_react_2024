@@ -2,6 +2,9 @@
 
 Welcome to my new animated portfolio! This website showcases my projects and skills in web development, featuring dynamic UI interactions powered by React animations and motion libraries.
 
+![thumbnail]([https://github.com/leon019i/MediaMender/assets/84818419/2769f903-b673-47b0-84eb-58935ac2acca](https://github.com/leon019i/portfolio_react_2024/blob/98c9285d7aeb3e9b13c8f6566bfe1f31acaa9d2b/public/assets/images/DALL%C2%B7E%202024-04-15%2004.21.00%20-%20Create%20a%20professional%20and%20modern%20thumbnail%20for%20a%20portfolio%20showcasing%20the%20personal%20brand%20of%20'Louay%20Fayez'.%20The%20design%20should%20be%20clean%2C%20minimalist%2C%20and.webp))
+
+
 ## Technologies Used 🛠️
 
 - **Next.js**: A React framework that enables functionality such as static site generation and server-side rendering.
