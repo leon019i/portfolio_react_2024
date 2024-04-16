@@ -10,6 +10,7 @@ export default function Profile() {
                 className="relative w-[100px] h-[100px] rounded-full flex items-center justify-center bg-gradient-to-r from-blue-joust to-green-benzol">
                 <Image src={MyImage}
                        alt="Loay Fayez photo"
+                       loading="lazy"
                        className="w-[95px] h-[95px] rounded-full object-cover border-[0.1vw] border-blue-cosmos"
                 />
                 {/* Online */}

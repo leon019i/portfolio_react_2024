@@ -60,6 +60,19 @@ body {
         content: "";
     }
 }
+/*For adjusting the text responsiveness*/
+.body-text {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+@media (min-width: 640px) { /* Tailwind's 'sm' breakpoint */
+    .body-text {
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+    }
+}
+
 
 /*---Fancy button---*/
 .fancy-btn {

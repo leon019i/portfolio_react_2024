@@ -32,28 +32,31 @@ interface TimelineItemProps {
 
 export const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, subTitle, isCourse, link, tag }) => {
     return (
-        <div className="flex flex-wrap gap-12 min-h justify-start relative text-base sm:text-lg">
+        <div className="flex flex-wrap gap-4 sm:gap-12 min-h justify-start relative text-sm sm:text-base">
             {/* Date Timeline */}
-            <div className="h-auto flex-none whitespace-pre" style={{ width: `${isCourse ? "0" : "auto"}` }}>
-                <p className="text-secondary-foreground">{date}</p>
+            <div className="h-auto flex-none" style={{ minWidth: isCourse ? "0" : "auto" }}>
+                <p className="text-secondary-foreground text-xs sm:text-sm">{date}</p>
             </div>
             {/* Right side */}
-            <div className="flex gap-x-2" style={{ transform: `${isCourse ? "translateX(-45px)" : "none"}` }}>
-                <div className="flex flex-col gap-y-0.5">
+            <div className="flex gap-x-2" style={{ transform: isCourse ? "translateX(-45px)" : "none" }}>
+                <div className="flex flex-col gap-y-1">
                     {/* Title */}
-                    <div className="break-words whitespace-pre">
-                        <p className="leading-6 font-medium">{title}</p>
+                    <div className="break-words">
+                        <p className="leading-tight sm:leading-6 font-medium text-sm sm:text-md">{title}</p>
                     </div>
                     {/* Subtitle */}
-                    <div className="flex items-center gap-2 w-fit text-secondary-foreground hover:text-blue-joust cursor-pointer link">
-                        {link ? <a href={link} target="_blank" rel="noopener noreferrer">
-                                <Body subTitle={subTitle} tag={tag} link={link} /></a> :
+                    <div className="flex items-center gap-1 sm:gap-2 w-fit text-secondary-foreground hover:text-blue-joust cursor-pointer link">
+                        {link ?
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                <Body subTitle={subTitle} tag={tag} link={link} />
+                            </a> :
                             <Body subTitle={subTitle} tag={tag} />
                         }
                     </div>
                 </div>
             </div>
         </div>
+
     );
 }
 
