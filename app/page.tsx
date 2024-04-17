@@ -1,20 +1,19 @@
 "use client";
 import Head from 'next/head'
 import dynamic from "next/dynamic";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import {SpeedInsights} from "@vercel/speed-insights/next"
 
 import LandingSection from "@/sections/landing";
 import FeaturedSection from "@/sections/featured";
 import AboutSection from "@/sections/about";
 import ContactSection from "@/sections/contact";
-import { Analytics } from "@vercel/analytics/react";
+import {Analytics} from "@vercel/analytics/react";
+import Footer from "@/sections/footer";
 
 const WaterWaveWrapper = dynamic(
     () => import("@/components/visualEffects/water-wave-wrapper"),
-    { ssr: false }
+    {ssr: false}
 );
-
-
 
 
 export default function Home() {
@@ -67,6 +66,7 @@ export default function Home() {
                         <FeaturedSection/>
                         <AboutSection/>
                         <ContactSection/>
+                        <Footer/>
                     </div>
                 )}
             </WaterWaveWrapper>
