@@ -7,6 +7,7 @@ import Link from "next/link";
 import MenuCard from "@/components/navigation/header/full-screen-menu/menu-card";
 
 export default function FullScreenMenu() {
+  const year = new Date().getFullYear();
   return (
     <motion.div
       variants={menuSlide}
@@ -52,12 +53,12 @@ export default function FullScreenMenu() {
           </div>
           {/*----rIGHT--------------*/}
           <div className="flex items-center gap-4">
-            <Link href="/">©2024</Link>
+            <Link href="/">© {year} Loay Fayez. All rights reserved.</Link>
           </div>
         </div>
       </div>
       {/*Curve svg effect*/}
-      <Curve />
+      <Curve/>
     </motion.div>
   );
 }

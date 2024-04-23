@@ -6,12 +6,10 @@ import FramerMotionImg from "@/public/assets/images/stack/framer-motion.png";
 import TailwindImg from "@/public/assets/images/stack/tailwind.png";
 import HtmlImg from "@/public/assets/images/stack/html.png";
 import CssImg from "@/public/assets/images/stack/css.png";
-import SvelteImg from "@/public/assets/images/stack/svelte.png";
-import NestJsImg from "@/public/assets/images/stack/nestjs.jpg";
 import DjangoImg from "@/public/assets/images/stack/django.png";  // Assuming paths are correct
 import DjangoRestImg from "@/public/assets/images/stack/djangorest.png";
 import MySQLImg from "@/public/assets/images/stack/mysql.png";
-import PostgreSQLImg from "@/public/assets/images/stack/postgresql.png";
+import PostgresqlImg from "@/public/assets/images/stack/postgresql.png";
 import SQLiteImg from "@/public/assets/images/stack/sqlite.png";
 import PostmanImg from "@/public/assets/images/stack/postman.png";
 import CypressImg from "@/public/assets/images/stack/cypress.png";
@@ -20,8 +18,15 @@ import JavascriptImg from "@/public/assets/images/stack/JavaScript.png";
 import TypescriptImg from "@/public/assets/images/stack/typescript.png";
 import PythonImg from "@/public/assets/images/stack/Python.png"; // Add this if Python is also a part of your stack
 import JavaImg from "@/public/assets/images/stack/Java.png"
+import HerokuImg from "@/public/assets/images/stack/Heroku.png"
+import DigitalOceanImg from "@/public/assets/images/stack/Digital Ocean.png"
 
 
+import VercelImg from "@/public/assets/images/stack/Vercel.png";
+
+import NGINXImg from "@/public/assets/images/stack/NGINX.png";
+
+import ApacheImg from "@/public/assets/images/stack/Apache.png";
 export const stackData = [
     {
         title: "Programming Languages",
@@ -30,25 +35,25 @@ export const stackData = [
                 id: 0,
                 title: "Javascript",
                 image: JavascriptImg,
-                bgColor: "#F0DB4F",  // JavaScript typically uses a yellow theme
+                bgColor: "",  // JavaScript typically uses a yellow theme
             },
             {
                 id: 1,
                 title: "Typescript",
                 image: TypescriptImg,
-                bgColor: "#3178C6",  // TypeScript is known for its blue theme
+                bgColor: "",  // TypeScript is known for its blue theme
             },
             {
                 id: 2,
                 title: "Python",
                 image: PythonImg,
-                bgColor: "#3776AB",  // Python's color
+                bgColor: "",  // Python's color
             },
             {
                 id: 3,
                 title: "Java",
                 image: JavaImg,
-                bgColor: "#3776AB",  // Python's color
+                bgColor: "",  // Python's color
             }
         ],
     },
@@ -71,6 +76,47 @@ export const stackData = [
         ],
     },
     {
+        title: "Deployment",
+        stack: [
+            {
+                id: 0,
+                title: "Heroku",
+                image: HerokuImg,
+                bgColor: "",
+            },
+            {
+                id: 1,
+                title: "Digital Ocean",
+                image: DigitalOceanImg,
+                bgColor: "",
+            },
+            {
+                id: 2,
+                title: "Vercel",
+                image: VercelImg,
+                bgColor: "",
+            },
+        ],
+    },
+    {
+        title: "Web Servers",
+        stack: [
+            {
+                id: 0,
+                title: "NGINX",
+                image: NGINXImg,
+                bgColor: "",
+            },
+            {
+                id: 1,
+                title: "Apache",
+                image: ApacheImg,
+                bgColor: "",
+            },
+
+        ],
+    },
+    {
         title: "Frontend FWs",
         stack: [
             {
@@ -83,12 +129,6 @@ export const stackData = [
                 id: 1,
                 title: "Next js",
                 image: NextJsImg,
-                bgColor: "",
-            },
-            {
-                id: 2,
-                title: "Svelte",
-                image: SvelteImg,
                 bgColor: "",
             },
             {
@@ -179,8 +219,8 @@ export const stackData = [
             },
             {
                 id: 1,
-                title: "PostgreSQL",
-                image: PostgreSQLImg,
+                title: "Postgresql",
+                image: PostgresqlImg,
                 bgColor: "",
             },
             {
